@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        .radio{
+        display: flex; 
+        justify-content:center;
+        gap:20px;
+        }
+        .icons{
+            width:25px ;
+            height:20px
+        }
+        .user{
+            display:flex;
+            justify-content:center;
+            padding-top:10px;
+        }
+        .input{
+            width:300px;
+        }
+        .sub-button{
+            margin-bottom:10px;
+        }
+        .bottom-section{
+            margin-top:20px;
+        }
+        button{
+           
+            border-radius:2px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
+   <h1>Registration Form</h1> 
+  <hr>
+   <div class="radio" >
+   <input type="radio" name="account"><h3>Personal</h3>
+   <input type="radio" name="account"><h3>Office</h3>
+   </div>
+
+   <div class="user" >
+    <form>
+    <img class="icons" src="data:image/png;base64,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"
+    target="_blank" />
+    <input class="input" type="text" placeholder="Name" pattern="[A-Za-z]{2,18}">
+   </div>
+    <div class="user">
+       <img class="icons" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQRtt6yPwqq2R-Nk-2_8lnKFUr6QgW-lY7d7O-Ok18H-sXJK73dsYHpMU&s" target="_blank" />
+       <input class="input" type="email" placeholder="Email" required>
+    </div>
+    <div class="user">
+       <img class="icons" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3jmv1BooCyUXjLbEqyvXvd62WbgfHZsdEEg&s==" target="_blank"/>
+       <input class="input" type="password" placeholder="Password" required> </div>
+   <br>
+    <button type="submit" class="sub-button">Submit</button>
+ </form>
+ <hr>
+ <div class="bottom-section">
+ <button type="button" onclick="alert('Your submission is confirmed please click Next below')">Confirm</button>
+<a href="Login\task1.html">
+    <button type="button" >Next</button>
+</a>
+
+</div>
+
+
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+

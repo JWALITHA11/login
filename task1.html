@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details form</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+        }
+         .form{
+            padding-top:70px;
+            justify-content: center;
+            height:450px;
+           padding-left: 400px;
+           background-color: rgb(248, 247, 247);
+           width:880px;
+           margin:30px;
+           
+        } 
+        .submission{
+            margin-top:20px;
+        }
+        .occupation{
+            height:40px;
+            padding-top: 10px;
+           
+        }
+        .submit{
+            padding-top: 20px;
+        }
+        textarea{
+            text-align:center;
+            
+        }
+        .submit-button{
+          margin-top: 20px;
+          background-color: rgb(247, 200, 177);
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="form">
+        <form>
+        <label for="name">Enter your name</label> 
+        <input type="text" placeholder="Enter Your Name" id="name" required pattern="[A-Za-z]{2,18}">
+        <label for="age">Enter your age</label>
+        <input type="number" placeholder="age" min="10" max="80" id="age" required>
+       <br>
+      
+   
+        <div class="occupation"> Choose your occupation 
+       <input type="radio" name="occupation">Business
+       <input type="radio" id="opts" name="occupation">
+       <label for="opts">Agriculture</label>  
+       <input type="radio" id="opts1" name="occupation">
+       <label for="opts1">Education</label>    </div>
+        For Business
+       <select>
+        <option>Provisions</option>
+        <option>Stock</option>
+        <option>Real-estate</option>
+        <option>Insurance</option>
+        <option>Finance</option>
+       </select>
+       <br>
+       <div  class="occupation">For Education
+       <input list="education">
+       <datalist id="education">
+        <option value="SSC"></option>
+        <option value="MPC"></option>
+        <option value="Btech"></option>
+        <option value="Medicine"></option>
+       </datalist></div>
+       
+       <div  class="occupation">For Agriculture
+       <input type="checkbox">Farming
+       <input type="checkbox">harvesting
+       <input type="checkbox">Irrigation
+       <input type="checkbox">Weeding
+       <input type="checkbox">storage
+    </div>
+
+       Choose the date : <input type="date" required>
+       <div class="submit">
+       <textarea rows="5" cols="30">Feedback</textarea></div>
+       <input class="submit-button" type="submit" >
+       <!-- <input class="submit-button" type="submit" onclick="alert('Your response is recorded')"> -->
+       <button class="submit-button" type="button"  onclick="document.location='Login\example.html'">Next</button>
+    </div>
+    
+    
+    
+    
+</body>
+</html>
